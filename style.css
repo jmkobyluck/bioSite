@@ -3,8 +3,6 @@ body {
     color: #FFE63A;
 }
 
-
-
 .container {
     background-color: #0099F7;
     margin: 0;
@@ -22,6 +20,9 @@ p {
 header {
     background-color: #BB070E;
     margin: 0;
-    color: #34F9FE;
-    
+    color: #34F9FE;    
+}
+
+.C1 {
+    columns: 2;
 }
