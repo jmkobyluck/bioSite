@@ -1,0 +1,27 @@
+body {
+    font-family: "Exo 2", Verdana, Arial, sans-serif;
+    color: #FFE63A;
+}
+
+
+
+.container {
+    background-color: #0099F7;
+    margin: 0;
+    
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 25px;
+}
+
+header {
+    background-color: #BB070E;
+    margin: 0;
+    color: #34F9FE;
+    
+}
