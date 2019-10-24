@@ -24,25 +24,49 @@ p {
     font-size: 25px;
 }
 
-header {
+.header {
     background-color: #BB070E;
-    margin: 0;
-    color: #34F9FE; 
-    columns: 7
+}
+
+.containerhead {
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.Seth, .Wife, .Kids, .Life {
+    float: none;
+    color: #34F9FE;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border-radius; 4px;
+    font-weight: bold;
 }
 
 .C1, .C2, .C4 {
     columns: 2;
+    display: flex;
 }
 
 .C3 {
     columns: 3;
+    display: flex;
 }
 
 .C1image, .C2content, .C4content {
     float:left;
     padding-left: 300px;
-    padding-top: 0px
+    padding-top: 0px;
+    display: flex;
 }
 
 .C1content, .C2image, .C4image {
@@ -55,7 +79,7 @@ nav {
     
 }
 
-.C1, .C2, .C3, .C4, .C5image {
+.C1, .C2, .C3, .C4, {
     padding-top: 100px
 }
 
@@ -66,5 +90,17 @@ nav {
 }
 
 .C3content {
-    object-position: center
+    object-position: center;
+}
+
+.C5image {
+    align-items: center;
+    display: flex;
+    justify-content: center;   
+}
+
+footer {
+    padding-top: 25px;
+    
+    
 }
