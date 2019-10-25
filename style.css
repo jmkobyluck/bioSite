@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.seth {
+#seth {
     font-size: 50px;
 }
 
@@ -16,29 +16,75 @@ h2 {
     font-size: 50px;
 }
 
-ul {
-    font-size: 50px;
-}
-
 p {
     font-size: 25px;
 }
 
-.header {
+header {
     background-color: #BB070E;
+    padding: 0;
 }
 
-.containerhead {
-    width: 80%;
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.containerhead, container {
+    width: 70%;
     margin: auto;
 }
 
 .logo {
     float: left;
+    padding: 10px 0;
 }
 
 nav {
     float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    align-items: center;
+    
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #34F9FE;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #34F9FE;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%
 }
 
 .Seth, .Wife, .Kids, .Life {
@@ -51,6 +97,8 @@ nav {
     border-radius; 4px;
     font-weight: bold;
 }
+
+
 
 .C1, .C2, .C4 {
     columns: 2;
@@ -76,7 +124,8 @@ nav {
 
 nav {
     margin-left: 200px;
-    
+    padding-bottom: 10px
+        
 }
 
 .C1, .C2, .C3, .C4, {
