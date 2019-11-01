@@ -41,7 +41,19 @@ section p {
     display: block;
 }
 
+.sec-txt {
+    max-width: 350px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: fit-content;
+}
 
+.kids-txt {
+    max-width: 350px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: fit-content;
+}
 
 
 /* Header
@@ -116,16 +128,18 @@ nav a:focus {
     padding: 0;
 
     text-align: center;
+    align-content: center;
 }
 
 h1 {
     padding: 0;
+    float: none;
 }
 
 figure {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1em 0 0;
+    padding: 0;
 }
 
 section {
@@ -138,15 +152,53 @@ section {
 .wife-img,
 .life-img {
     max-width: 400px;
-}
-
-.seth-txt,
-.wife-txt,
-.life-txt {
-    max-width: 600px;
+    padding: 1rem;
 }
 
 .kids-img1,
 .kids-img2 {
     max-width: 450px;
+    padding: 1rem;
+}
+
+.close-img {
+    max-width: 768px;
+    padding: 1rem;
+}
+
+
+
+
+@media (min-width:60rem) {
+    .col {
+        columns: 2;
+        width: 768px;
+    }
+
+    h1 {
+        float: none;
+    }
+
+    .col-left {
+        float: left;
+    }
+    
+    .col-right {
+        float: right;
+    }
+
+    .sections {
+        text-align: justify;
+        align-content: center;
+    }
+
+    .kids-txt {
+        max-width: 768px;
+        display: inline-block;
+        vertical-align: middle;
+        min-height: fit-content;
+    }
+
+    header {
+    }
 }
