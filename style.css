@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Exo 2", Verdana, Arial, sans-serif;
-    text-align: justify;
+    text-align: center;
    
 }
 
@@ -74,6 +74,7 @@ nav li {
     display: inline-block;
     margin: 1em;
     color: #FFE63A;
+    margin 2em;
 }
 
 nav a {
@@ -81,7 +82,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: .8em
-    padding: .5em;
+    padding: 5em;
     color:#FFE63A;
 }
 
@@ -113,6 +114,8 @@ nav a:focus {
 
     margin: -3.3em 0 0 0;
     padding: 0;
+
+    text-align: center;
 }
 
 h1 {
@@ -120,32 +123,30 @@ h1 {
 }
 
 figure {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 1em 0 0;
 }
 
-/*section {
+section {
     margin: 0;
     padding: 0;
+    align-content: center;
 }
 
-.seth-img {
-    max-width: 300px;
-    float: left;
+.seth-img,
+.wife-img,
+.life-img {
+    max-width: 400px;
 }
 
-.seth-txt {
-    max-width: 700px;
-    float: right;
+.seth-txt,
+.wife-txt,
+.life-txt {
+    max-width: 600px;
 }
 
-.wife-img {
-    max-width: 300px;
-    float: right;
+.kids-img1,
+.kids-img2 {
+    max-width: 450px;
 }
-}
-
-.wife-txt {
-    max-width: 700px;
-    float: left;
-}*/
