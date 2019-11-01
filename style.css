@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -6,188 +7,145 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Exo 2", Verdana, Arial, sans-serif;
-    color: #FFE63A;
+    text-align: justify;
+   
 }
 
-/*Header Style*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* Typography
+=============== */
+
+section {
+    font-size: 2.5em;
+    color: #FFE63A;
+    margin: 0;
+    text-shadow: 1.5px 1.5px #111111;
+}
+
+section h1 {
+    font-weight: 700;
+}
+
+section p {
+    font-size: .6em;
+    display: block;
+}
+
+
+
+
+/* Header
+=============== */
 
 header {
-    background-color: #BB070E;
+    margin: 0;
     padding: 0;
-    height: 70px;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.containerhead {
-    width: 70%;
-    margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    background-color: #9C271D;
+    text-align: center;
+    overflow: auto;
 }
 
 .logo {
-    float: left;
-    padding: 10px 0;
-}
-
-.logo:hover {
-    color: #34F9FE;
+    max-width: 70px;
+    margin: 1em;
 }
 
 nav {
-    float: right;
+    margin: 1em;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 40px;
-    padding-top: 15px;
-    align-items: center;
-    
-    position: relative;
+    margin: 1em;
+    color: #FFE63A;
 }
 
 nav a {
+    font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: .8em
+    padding: .5em;
+    color:#FFE63A;
 }
 
-nav a:hover {
-    color: #34F9FE;
+nav a:hover,
+nav a:focus {
+    color: rgb(243, 182, 0);
 }
 
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #34F9FE;
-    
-    position: absolute;
-    top: 0;
-    width: 0%;
-    
-    transition: all ease-in-out 250ms;
-}
+@media (min-width:27rem) {
+    .logo {
+        float: left;
+    }
 
-nav a:hover::before {
-    width: 100%
-}
-
-nav {
-    margin-left: 200px;
-    padding-bottom: 10px;
-}
-
-.Seth, .Wife, .Kids, .Life {
-    float: none;
-    color: #34F9FE;
-    text-decoration: none;
-    font-size: 30px;
-    line-height: 25px;
-    border-radius; 3px;
-    font-weight: bold;
+    nav {
+        float: right;
+    }
 }
 
 
-/*Section Style*/
+/* Sections
+=============== */
 
-.C1, .C2, .C4 {
-    columns: 2;
-    display: flex;
+.sections {
+    background-image: url(images/superman-bg.jpg);
+    background-repeat: no-repeat top center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    margin: -3.3em 0 0 0;
     padding: 0;
 }
 
-.C3 {
-    columns: 2;
-    display: flex;
+h1 {
     padding: 0;
 }
 
-.C2content, .C4content {
-    float:left;
-    padding-left: 340px;
-    padding-top: 0px;
-    display: flex;
+figure {
+    margin: 0;
+    padding: 0 1em 0 0;
 }
 
-.C1image {
+/*section {
+    margin: 0;
+    padding: 0;
+}
+
+.seth-img {
+    max-width: 300px;
     float: left;
-    padding-left: 300px;
-    padding-top: 0px;
 }
 
-.C1content p, .C2image, .C4image {
-    float:right;
-    margin-right: 300px
+.seth-txt {
+    max-width: 700px;
+    float: right;
 }
 
-nav {
-    margin-left: 200px;
-    padding-bottom: 10px
-        
+.wife-img {
+    max-width: 300px;
+    float: right;
+}
 }
 
-.C1, .C2, .C3, .C4, {
-    padding-top: 100px
-}
-
-.C3, .C3content {
-    padding-left: 340px;
-    padding-right: 340px;
-}
-
-.C5image {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-}
-
-#seth {
-    font-size: 50px;
-}
-
-h2 {
-    font-size: 50px;
-}
-
-p {
-    font-size: 25px;
-}
-
-.container {
-    background-color: #0099F7;
-    margin: 0;
-}
-
-.Chead {
-    padding-left: 300px;
-    margin: 0;
-    padding-top: 10px;
-}
-
-h2 {
-    margin: 0;
-    
-}
-
-.C5image, .close {
-    padding-left: 340px;
-    padding-right: 340px;
-}
-
-.C5image {
-    max-width: 
-}
+.wife-txt {
+    max-width: 700px;
+    float: left;
+}*/
