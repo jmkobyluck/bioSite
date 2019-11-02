@@ -8,7 +8,6 @@ body {
     padding: 0;
     font-family: "Exo 2", Verdana, Arial, sans-serif;
     text-align: center;
-   
 }
 
 img {
@@ -16,9 +15,20 @@ img {
     height: auto;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+    height: 85px;
+}
+
 .container {
-    width: 95%;
+    max-width: 768px;
     margin: 0 auto;
+}
+
+.padding85 {
+    padding-top: 85px;
+    display: block;
 }
 
 
@@ -32,14 +42,14 @@ section {
     text-shadow: 1.5px 1.5px #111111;
 }
 
-section h1 {
-    font-weight: 700;
-}
+    section h1 {
+        font-weight: 700;
+    }
 
-section p {
-    font-size: .6em;
-    display: block;
-}
+    section p {
+        font-size: .6em;
+        display: block;
+    }
 
 .sec-txt {
     max-width: 350px;
@@ -55,6 +65,13 @@ section p {
     min-height: fit-content;
 }
 
+.close-txt {
+    max-width: 768px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: fit-content;
+}
+
 
 /* Header
 =============== */
@@ -65,6 +82,13 @@ header {
     background-color: #9C271D;
     text-align: center;
     overflow: auto;
+    top: 0;
+}
+
+.header-container {
+    padding: 0 20px;
+    margin: auto;
+    max-width: 800px;
 }
 
 .logo {
@@ -76,32 +100,31 @@ nav {
     margin: 1em;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-nav li {
-    display: inline-block;
-    margin: 1em;
-    color: #FFE63A;
-    margin 2em;
-}
+    nav li {
+        display: inline-block;
+        margin: 1em;
+        color: #FFE63A;
+        margin 2em;
+    }
 
-nav a {
-    font-weight: 800;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .8em
-    padding: 5em;
-    color:#FFE63A;
-}
+    nav a {
+        font-weight: 800;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8em padding: 5em;
+        color: #FFE63A;
+    }
 
-nav a:hover,
-nav a:focus {
-    color: rgb(243, 182, 0);
-}
+        nav a:hover,
+        nav a:focus {
+            color: rgb(243, 182, 0);
+        }
 
 @media (min-width:27rem) {
     .logo {
@@ -119,14 +142,12 @@ nav a:focus {
 
 .sections {
     background-image: url(images/superman-bg.jpg);
-    background-repeat: no-repeat top center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
     margin: -3.3em 0 0 0;
     padding: 0;
-
     text-align: center;
     align-content: center;
 }
@@ -166,8 +187,9 @@ section {
     padding: 1rem;
 }
 
-
-
+.col {
+    margin: 0 auto;
+}
 
 @media (min-width:60rem) {
     .col {
@@ -182,7 +204,7 @@ section {
     .col-left {
         float: left;
     }
-    
+
     .col-right {
         float: right;
     }
@@ -201,4 +223,21 @@ section {
 
     header {
     }
+}
+
+footer {
+    background-image: url(images/superman_footer.jpg);
+    background-position: bottom;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    max-width: vw;
+    background-size: cover;
+    min-height: 406px;
+}
+
+h2 {
+    padding: 3em 0 0 0;
+    margin:0;
+    color: #FFE63A;
 }
