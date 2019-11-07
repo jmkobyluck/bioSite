@@ -1,4 +1,4 @@
-
+0
 * {
     box-sizing: border-box;
 }
@@ -19,6 +19,7 @@ header {
     position: fixed;
     width: 100vw;
     height: 85px;
+    z-index: 99;
 }
 
 .container {
@@ -42,20 +43,50 @@ section {
     text-shadow: 1.5px 1.5px #111111;
 }
 
-    section h1 {
+section h1 {
         font-weight: 700;
-    }
+}
 
-    section p {
+section p {
         font-size: .6em;
         display: block;
-    }
+}
+
+.sec-txt p {
+    color: #111111;
+    font-weight: 400;
+    text-shadow: 1px 1px black;
+    opacity: unset;
+    position: unset;
+    vertical-align: middle;
+}    
 
 .sec-txt {
     max-width: 350px;
     display: inline-block;
     vertical-align: middle;
     min-height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: unset;
+}
+
+div.close-txt, 
+div.kids-txt {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: unset;
+}
+
+.txtbox-bg {
+    border: 2px sloid #FFE63A;
+    position: initial;
 }
 
 .kids-txt {
@@ -157,6 +188,12 @@ h1 {
     float: none;
 }
 
+.wife h1,
+.kids h1,
+.life h1 {
+    margin-top: 0;
+}
+
 figure {
     margin-left: auto;
     margin-right: auto;
@@ -240,4 +277,60 @@ h2 {
     padding: 3em 0 0 0;
     margin:0;
     color: #FFE63A;
+}
+
+figure.wife-img.col-right {
+    margin: 0;
+    padding: 0 16px;
+}
+
+div.wife-txt.col-left {
+    height: 442px;
+}
+
+figure.life-img.col-right {
+    margin: 0;
+    padding: 0 16px;
+}
+
+div.life-txt.col-left {
+    height: 462px;
+}
+
+figure.close-img {
+    padding: 0;
+}
+
+figure.kids-img1.col-left {
+    padding-left: 0;
+}
+
+figure.kids-img2.col-right {
+    padding-right: 0;
+}
+
+figure.life-img.col-right {
+    padding-right: 0;
+}
+
+div.close-txt.sec-txt {
+    margin-bottom: 40px;
+}
+
+section#close.close.padding85 {
+    padding-top: 0;
+}
+
+
+
+@media (max-width:956px) {
+    figure.wife-img.col-right,
+    figure.life-img.col-right {
+        margin: 58px auto;
+    }
+
+    figure.kids-img2.col-right,
+    figure.kids-img1.col-left {
+        padding: 16px;
+    }
 }
