@@ -2,270 +2,161 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/superman-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Exo 2", Verdana, Arial, sans-serif;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 header {
     position: fixed;
-    width: 100vw;
-    height: 85px;
     z-index: 99;
-}
-
-.container {
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-.padding85 {
-    padding-top: 85px;
-    display: block;
-}
-
-
-/* Typography
-=============== */
-
-section {
-    font-size: 2.5em;
-    color: #FFE63A;
-    margin: 0;
-    text-shadow: 1.5px 1.5px #111111;
-}
-
-section h1 {
-        font-weight: 700;
-}
-
-section p {
-        font-size: .6em;
-        display: block;
-}
-
-.sec-txt p {
-    color: #111111;
-    font-weight: 400;
-    text-shadow: 1px 1px black;
-    opacity: unset;
-    position: unset;
-    vertical-align: middle;
-}    
-
-.sec-txt {
-    max-width: 350px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    position: unset;
-}
-
-div.close-txt, 
-div.kids-txt {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    position: unset;
-}
-
-.txtbox-bg {
-    border: 2px sloid #FFE63A;
-    position: initial;
-}
-
-.kids-txt {
-    max-width: 350px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: fit-content;
-}
-
-.close-txt {
-    max-width: 768px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: fit-content;
-}
-
-
-/* Header
-=============== */
-
-header {
-    margin: 0;
-    padding: 0;
-    background-color: #9C271D;
-    text-align: center;
-    overflow: auto;
     top: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    background-color: #9C271D;
 }
 
-.header-container {
-    padding: 0 20px;
+header .header-container {
+    max-width: 768px;
     margin: auto;
-    max-width: 800px;
+    padding: 0 25px;
 }
 
-.logo {
-    max-width: 70px;
-    margin: 1em;
+header .header-container nav {
+    float: right;
 }
 
-nav {
-    margin: 0 1em;
+header .header-container img {
+    height: 55px;
+    margin: 15px 0;
 }
 
-nav ul {
-    margin: 0;
+header .header-container ul {
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-nav li {
+header .header-container ul li {
     display: inline-block;
     margin: 0;
     color: #FFE63A;
     line-height: 85px;
-    padding: 0 15px}
+    padding: 0 15px;
+}
 
-nav a {
+header .header-container ul li a {
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFE63A;
 }
 
-    nav a:hover,
-    nav a:focus {
-        color: rgb(243, 182, 0);
-    }
-
-@media (min-width:27rem) {
-    .logo {
-        float: left;
-    }
-
-    nav {
-        float: right;
-    }
+header .header-container ul li a:hover {
+    color: rgb(243, 182, 0);
 }
 
-
-/* Sections
-=============== */
-
-.sections {
-    background-image: url(images/superman-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    margin: -3.3em 0 0 0;
-    padding: 0;
-    text-align: center;
-    align-content: center;
-}
-
-h1 {
-    padding: 0;
-    float: none;
-}
-
-.wife h1,
-.kids h1,
-.life h1 {
-    margin-top: 0;
+#close {
+    padding-top: 0px;
 }
 
 figure {
-    margin-left: auto;
-    margin-right: auto;
     padding: 0;
-}
-
-section {
     margin: 0;
-    padding: 0;
-    align-content: center;
+    display: inline-block;
 }
 
-.seth-img {
-    max-width: 400px;
-    padding: 0 1rem;
-    padding-top: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
+.float {
+    float: right;
 }
 
-.wife-img,
-.life-img {
-    max-width: 400px;
-    padding: 1rem;
-    padding-top: 0;
-}
-
-.kids-img1,
-.kids-img2 {
-    max-width: 450px;
-    padding: 1rem;
-}
-
-.close-img {
+.sections {
+    width: 100%;
+    margin: auto;
     max-width: 768px;
-    padding: 1rem;
 }
 
-.col {
-    margin: 0 auto;
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 85px;
 }
 
-@media (min-width:60rem) {
-    .col {
-        columns: 2;
-        width: 768px;
-    }
+.wrapper .container {
+    width: 100%;
+}
 
-    h1 {
-        float: none;
-    }
+.wrapper .container h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFE63A;
+    padding: 0 30px;
+    margin: 0 0 10px 0;
+}
 
-    .col-left {
-        float: left;
-    }
+.wrapper .container .content {
+    width: 100%;
+    display: flex;
+}
 
-    .col-right {
-        float: right;
-    }
+.wrapper .container .content figure {
+    width: 50%;
+}
 
-    .sections {
-        text-align: justify;
-        align-content: center;
-    }
+.wrapper .container .content figure.full-figure {
+    width: 100%;
+}
 
-    .kids-txt {
-        max-width: 768px;
-        display: inline-block;
-        vertical-align: middle;
-        min-height: fit-content;
-    }
+.wrapper .container .content figure img {
+    width: 100%;
+    padding: 30px;
+}
 
-    header {
-    }
+.wrapper .container .info {
+    width: 50%;
+    display: inline-block;
+    white-space: normal;
+    font-size: 1.4em;
+    text-align: justify;
+    padding: 30px;
+    font-weight: 400;
+    text-shadow: 1px 1px black;
+}
+
+.wrapper .container .info.info-x {
+    font-size: 1.46em;
+}
+
+.wrapper .container .info p {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: .6;
+    margin: 0;
+    padding: 20px;
+}
+
+.wrapper .container .info-under {
+    width: 100%;
+    display: block;
+}
+
+.wrapper .container .info-under p {
+    width: 100%;
 }
 
 footer {
@@ -274,69 +165,47 @@ footer {
     text-align: center;
     padding: 0;
     margin: 0;
-    max-width: vw;
     background-size: cover;
     min-height: 406px;
 }
 
-h2 {
+footer h2 {
     padding: 3em 0 0 0;
-    margin:0;
     color: #FFE63A;
 }
 
-figure.wife-img.col-right {
-    margin: 0;
-/*    padding: 0 16px;*/
-}
-
-div.wife-txt.col-left {
-    height: 442px;
-}
-
-figure.life-img.col-right {
-    margin: 0;
-/*    padding: 0 16px;*/
-}
-
-div.life-txt.col-left {
-    height: 462px;
-}
-
-figure.close-img {
-    padding: 0;
-}
-
-figure.kids-img1.col-left {
-    padding-left: 0;
-}
-
-figure.kids-img2.col-right {
-    padding-right: 0;
-}
-
-figure.life-img.col-right {
-    padding-right: 0;
-}
-
-div.close-txt.sec-txt {
-    margin-bottom: 40px;
-}
-
-section#close.close.padding85 {
-    padding-top: 0;
-}
-
-
-
-@media (max-width:956px) {
-    figure.wife-img.col-right,
-    figure.life-img.col-right {
-        margin: 58px auto;
+@media (max-width:800px) {
+    .float {
+        float: none;
     }
 
-    figure.kids-img2.col-right,
-    figure.kids-img1.col-left {
-        padding: 16px;
+    .wrapper {
+        margin: auto;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .wrapper .container .content {
+        display: block;
+    }
+
+    .wrapper .container .info {
+        width: 100%;
+        display: block;
+    }
+
+    .wrapper .container .content figure {
+        width: 100%;
+        display: block;
+    }
+
+    #close {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #close img,
+    #close .info {
+        padding: 25px 0;
     }
 }
