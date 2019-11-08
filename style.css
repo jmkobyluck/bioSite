@@ -204,11 +204,19 @@ section {
     align-content: center;
 }
 
-.seth-img,
+.seth-img {
+    max-width: 400px;
+    padding: 0 1rem;
+    padding-top: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .wife-img,
 .life-img {
     max-width: 400px;
     padding: 1rem;
+    padding-top: 0;
 }
 
 .kids-img1,
